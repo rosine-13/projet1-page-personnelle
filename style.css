@@ -1,0 +1,153 @@
+  /* RESET DE BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLE GLOBAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #fce4ec, #e3f2fd);
+    /*background: linear-gradient(135deg, #fde2e8, #f9c5d1);*/
+    padding: 40px 80px;
+}
+
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+/* TEXTE À GAUCHE */
+.presentation-text {
+    flex: 1;
+}
+
+.presentation-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.presentation-text p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 500px;
+}
+
+/* IMAGE À DROITE */
+.presentation-image {
+    flex: 1;
+    text-align: center;
+}
+
+.presentation-image img {
+    width: 100%;
+    max-width: 420px;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ANIMATION IMAGE */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* SECTIONS 
+section {
+    padding: 80px 100px;
+}*/
+
+/* À PROPOS */
+.apropos {
+    background-color: #f3f6ff;
+}
+
+.apropos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.apropos p {
+    max-width: 700px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* PASSION */
+.passion {
+    background-color: #f3f6ff;
+}
+
+.passion h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.passion p {
+    max-width: 700px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* BOUTON */
+/* BOUTON */
+.passion-btn {
+    margin-top: 30px;
+    padding: 14px 30px;
+    border: none;
+    background: linear-gradient(135deg, #ec407a, #7e57c2);
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.passion-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVE (TÉLÉPHONE) */
+@media (max-width: 900px) {
+    header {
+        padding: 40px 20px;
+    }
+
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentation-text h1 {
+        font-size: 2.2rem;
+    }
+}
+   /* section {
+        padding: 60px 25px;
+    }*/
+
+section{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
